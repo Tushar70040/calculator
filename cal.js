@@ -10,6 +10,7 @@ let hasDecimal2= false;
 let num1 = "";
 let num2 = "";
 let currentoperator = "";
+let op = document.querySelector("#opera");
 
 
 
@@ -37,6 +38,7 @@ ac.addEventListener(("click"),()=>{
     display.innerHTML= "";
     hasDecimal1 = false;
     hasDecimal2= false;
+    op.innerHTML = "";
 
 
 });
@@ -44,12 +46,14 @@ ac.addEventListener(("click"),()=>{
 operators.forEach((operator) => {
     operator.addEventListener(("click"),(e)=>{
         if(num1!==""){
-            if(currentoperator!= ""){
+            if(num2!= ""){
                 num1 = operate(num1,currentoperator,num2);
                 display.innerText = num1;
             }
         currentoperator = e.target.innerText;
+        op.innerText = currentoperator;
         num2 ="";
+
         hasDecimal2 = false; 
         }
         

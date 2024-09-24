@@ -9,6 +9,7 @@ body{
     width: 100vw;
     justify-content: center;
     align-items: center;
+    background-color: rgb(50, 92, 181);
     
 }
 #container{
@@ -17,12 +18,23 @@ body{
 }
 #display{
     border-bottom: solid black 5px;
-    height: 90px;
+    height: 70px;
     width: 325px;
     background-color: rgb(162, 162, 162);
     display: flex;
     justify-content: end;
     font-size: 70px;
+ 
+}
+#opera{
+    background-color: rgb(162, 162, 162);
+    display: flex;
+    justify-content: end;
+    height: 30px;
+    width: 325px;
+    font-weight: bold;
+    font-size: 25px;
+
 }
 
 #zero{
@@ -46,8 +58,8 @@ button{
 
 }
 .equal{
-    background-color: rgb(65, 65, 65);
-    color: aliceblue;
+    background-color: rgb(63, 217, 255);
+    color: rgb(0, 0, 0);
     border-radius: 50px;
     height: 70px;
     width: 70px;
